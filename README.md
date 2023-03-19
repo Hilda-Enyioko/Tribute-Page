@@ -5,6 +5,6 @@ This is a Tribute Page honoring Oprah Winfrey, an international icon and philant
 This project recognizes Oprah Winfrey, an Americian media mogul and philantropist. It contains quotes by her. It contains a concise narrative of her early years, her career journey and her works of philanthropy. Major achievements by Winfrey are also listed in the webage.
 
 ### Language and Framework Used:
-1  [HTML](/www.github.com/Hilda-Enyioko/Tribute-Page/index.html)
+1  [HTML](https://github.com/Hilda-Enyioko/Tribute-Page/blob/main/index.html)
 
 2  [CSS](/www.github.com/Hilda-Enyioko/Tribute-Page/styles.css)
