@@ -7,4 +7,4 @@ This project recognizes Oprah Winfrey, an Americian media mogul and philantropis
 ### Language and Framework Used:
 1  [HTML](https://github.com/Hilda-Enyioko/Tribute-Page/blob/main/index.html)
 
-2  [CSS](/www.github.com/Hilda-Enyioko/Tribute-Page/styles.css)
+2  [CSS](https://github.com/Hilda-Enyioko/Tribute-Page/blob/main/styles.css)
