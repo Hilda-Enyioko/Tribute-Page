@@ -1,0 +1,356 @@
+@media (prefers-reduced-motion:no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+body {
+  color: rgb(66, 2, 38);
+  font-family: Gill Sans, sans-serif;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffeeec;
+  background-image: url(https://images.hellomagazine.com/imagenes/fashion/celebrity-style/20220913150909/oprah-winfrey-wows-fans-unexpected-appearance-emmys-2022/0-734-489/oprah-t.jpg?tx=w_1200);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.5;
+  z-index: -1;
+}
+main {
+  opacity: 1;
+}
+
+header {
+  width: 100%;
+  background-color:	rgba(129, 19, 81, 0.7);
+  justify-content: center;
+  display: flex;
+  top: 0;
+  block-size: fit-content;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 5px 5px;
+  margin: 0 0;
+  height: 85px;
+  block-size: fit-content;
+}
+.header h1, .header h2 {
+  color: #f2d2bd;
+}
+
+.header h1 {
+  font-size: min(5vw, 1.6em);
+  padding: 10px 0 0;
+  margin: 5px 0 0;
+  letter-spacing: 12px;
+}
+.header h2 {
+  font-size: min(2.5vw, 1.2em);
+  padding: 0;
+  margin: 2px 0 0;
+  letter-spacing: 7px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0 0 10px;
+  margin: 5px 0 10px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(240, 210, 190);
+  font-size: min(2.6vw, 1.1em);
+}
+
+nav a:hover {
+  color: #e37383;
+}
+
+nav {
+  height: 20px;
+}
+
+.main{
+  width: 90%;
+}
+
+#img-div, .container{
+  /**background-color: #000000;**/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#image{
+  display: inine-block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  animation: float 7s ease-in-out infinite;
+}
+
+#img-caption{
+  background-color: #f26a8c37;
+  width: 90%;
+  margin: 0 auto;
+  animation: float 7s ease-in-out infinite;
+}
+
+.name, .job{
+  font-family: Georgia, serif;
+  font-weight: 600;
+}
+
+.name {
+  font-size: min(4vw, 1.5em);
+  letter-spacing: 1.1px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.job {
+  font-size: min(2vw, 1.1em);
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f26a8c37;
+  margin-bottom: 20px;
+  animation: float 7s ease-in-out infinite;
+}
+
+.section-name {
+  color: rgb(76, 7, 46);
+  font-size: 20px;
+}
+
+.section-name a{
+  text-decoration: none;
+  color: rgb(76, 7, 46);
+}
+
+.quote-nest{
+  /**background-color: black;**/
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  padding: 10px 10px 90px;
+  margin: 0 auto;
+}
+
+.quotes{
+  background-color:#ffeeec;
+  border-radius: 10px;
+  width: 40%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px rgba(4, 0, 2, 0.7);
+  overflow: auto;
+  animation: float 7s ease-in-out infinite;
+}
+
+.quotes::-webkit-scrollbar{
+  background-color: #f5f5f5;
+}
+
+.quotes::-webkit-scrollbar-track{
+  background-color: #f5f5f5;
+}
+
+.quotes::-webkit-scrollbar-thumb{
+  background-color: rgba(244, 174, 204, 0.709);
+  border-radius: 15px;
+  min-height: auto;
+  min-width: 20px;
+}
+
+.quotes p{
+  font-size: 14px;
+  text-align: center;
+  font-family: Trebuchet MS, san-serif;
+  line-height: 1.5rem;
+}
+
+.about p{
+  font-size: 14.2px;
+  text-align: left;
+  font-family: Trebuchet MS, san-serif;
+  line-height: 1.5rem;
+  margin: 2px 2px;
+}
+
+.about-nest{
+  /**background-color: black;**/
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  padding: 10px 10px 90px;
+  margin: 0 auto;
+}
+
+.about{
+  width: 92%;
+  block-size: fit-content;
+  background-color:#ffeeec;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 20px 7px;
+  margin: 0 0 20px;
+  box-shadow: 5px 5px 15px rgba(4, 0, 2, 0.8);
+  animation: float 7s ease-in-out infinite;
+}
+
+.achievement-nest{
+  /**background-color: black;**/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 10px 10px 80px;
+}
+
+.achievements{
+  background-color: #ffeeec;
+  block-size: fit-content;
+  width: 93%;
+  border-radius: 10px;
+  padding: 0 13px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px rgba(4, 0, 2, 0.7);
+  animation: float 7s ease-in-out infinite;
+}
+
+#achievements-and-awards{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.achievements p{
+  font-size: 15px;
+  text-align: center;
+  font-family: Trebuchet MS, san-serif;
+  line-height: 1.5rem;
+}
+
+.achievements > p > span{
+  font-weight: 900;
+  font-size: 16.3px;
+}
+
+footer{
+  width: 100%;
+  background-color:	rgba(129, 19, 81, 0.8);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  block-size: fit-content;
+}
+.footer{
+  /**background-color: red;**/
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px 5px;
+}
+
+.footer p{
+  padding-bottom: 0;
+  margin-bottom: 2px;
+}
+
+.footer a{
+  color: #f5f5f5;
+  font-family: Gill Sans, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 0;
+  block-size: fit-content;
+}
+
+.icon{
+  height: 25px;
+  width: 25px;
+  margin: 5px 10px 0;
+}
+
+.end {
+  font-style: italic;
+  font: Trebuchet MS, san-serif;
+  font-size: 14px;
+  margin: 7px;
+  color: #d4a0ca;
+}
+
+a:hover .end{
+  color: #fb94e6;
+}
